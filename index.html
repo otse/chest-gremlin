@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest Gremlin</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tiny5&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --modal-border: #f2ff00;
+            --header-bg: #ccff00;
+            --text-basic: #00ff00;
+            --text-labels: #850af1;
+            --text-values: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #191919;
+            color: var(--text-basic);
+            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Tiny5', monospace;
+            font-size: 16px;
+            height: 100vh;
+            overflow: hidden;
+            line-height: 1em; /* Adjusted line height for Tiny5 font */
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: #191919;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: inherit;
+            transition: color 0.1s;
+        }
+
+        .icon:hover {
+            color: var(--text-basic);
+        }
+
+        .stats-icon {
+            margin-left: 10px;
+        }
+
+        .inventory-icon {
+            margin-right: 10px;
+        }
+
+        .player-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .player {
+            font-size: 60px;
+            line-height: 1;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 30px;
+
+            /* display: flex; */
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .modal-content {
+            pposition: absolute;
+            ttop: 50%;
+            lleft: 50%;
+            ttransform: translate(-50%, -50%);
+            background: #000000;
+            border: 2px outset var(--modal-border);
+            color: var(--text-basic);
+            max-width: 400px;
+            width: 80%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            background: var(--header-bg);
+            color: #000000;
+            text-align: center;
+            font-weight: bold;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .modal-body {
+            padding: 10px;
+            ttext-transform: uppercase;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .stat-line {
+            margin: 5px 0;
+        }
+
+        .item-line {
+            margin: 3px 0;
+        }
+
+        .label {
+            color: var(--text-labels);
+        }
+
+        .label::after {
+            content: ":";
+        }
+
+        .value {
+            color: var(--text-values);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <button class="icon stats-icon" onclick="openStats()">📈</button>
+        <button class="icon inventory-icon" onclick="openInventory()">🐫</button>
+    </div>
+
+    <div class="player-container">
+        <div class="player">👺</div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div id="statsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                STATS & CHARACTER
+                <button class="close-btn" onclick="closeStats()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="stat-line"><span class="label">Lvl</span> <span class="value">1</span></div>
+                <!--<div class="stat-line"><span class="label">XP</span> <span class="value">0/100</span></div>-->
+                <!-- <div class="item-line">---</div> -->
+                
+                <div class="stat-line"><span class="label">Helf</span> <span class="value">100/100</span></div>
+                <br />
+                Camp:<br />
+                <div class="stat-line"><span class="label">Reputation</span> <span class="value">12</span></div>
+                <!--<div class="stat-line"><span class="label">Gold</span> <span class="value">0</span></div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Inventory Modal -->
+    <div id="inventoryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                PACK ANIMAL INVENTORY
+                <button class="close-btn" onclick="closeInventory()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="item-line"><span class="label">CAPACITY</span> <span class="value">0/20</span></div>
+                <div class="item-line">---</div>
+                <div class="item-line"><span class="value">EMPTY</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openStats() {
+            document.getElementById('statsModal').style.display = 'flex';
+        }
+
+        function closeStats() {
+            document.getElementById('statsModal').style.display = 'none';
+        }
+
+        function openInventory() {
+            document.getElementById('inventoryModal').style.display = 'block';
+        }
+
+        function closeInventory() {
+            document.getElementById('inventoryModal').style.display = 'none';
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const statsModal = document.getElementById('statsModal');
+            const inventoryModal = document.getElementById('inventoryModal');
+            
+            if (event.target === statsModal) {
+                closeStats();
+            }
+            if (event.target === inventoryModal) {
+                closeInventory();
+            }
+        }
+
+        // Close modals with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeStats();
+                closeInventory();
+            }
+        });
+    </script>
+</body>
+</html>
