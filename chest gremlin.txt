@@ -1,0 +1,92 @@
+theme: diluted fantasy, loosely wow, osrs but much more messy, look below for history
+
+genre: idle, clicker, roguelike
+
+the goal of the game is to make it to the grafter and increase your prestige
+
+> start as a grem or gnome
+
+you can recruit a pack animal > brahmin, camel
+
+in chest grem you find chests and later open them
+
+you can identify an item which reveals type (corrupted, holy, sharp, etc)
+
+you are either in a [hostile area] (dungeons, forts, etc)
+or you're in        [safety] (pumpkin farm, old tower, etc)
+
+hostile area always goes to safety and safety to a hostile area <->
+
+you can cower from a run but miss out on better chests
+
+when in [safety] you can [set up shop] which attracts visitors
+
+visitors will bid on items and you can accept or want more for it
+
+||camp reputation|| affects how gullible visitors are
+
+shoppers have a race and traits:
+a hobbit can arrive but he's corrupted, wounded, rich-looking, etc, and you can negotiate price based on this
+
+the history i promised:
+you are in stone lands, a somewhat chaotic realm struck by disorder. heroes roam freely in search of xp and gear. you are a gremlin or gnome and know a bit how to fight, find chests, circumvent danger, and to set up shop. the world feels like a free for all, with rampant heroism, strive and riches all taking place. your goal is to reach the grafter and show him that you've honored the tinker, so you can prestige and do it again.
+
+--- end of original write up ---
+
+
+
+-- start of rants ---
+
+here is a train of thought that makes chest gremlin what it is:
+
+to work it out:
+gnome walks thru the dungeon, even tho heroes are meant to for xp and loot
+if he's an npc vendor, what's he doing? he can loot gear left behind
+so to step in the footsteps of heroes, and hide in holes and corners
+until the heroes leave
+this way, he's still the vendor, still the sneaky little gremlin
+he could watch from behind a crate or a sewer outlet
+when he comes out he grabs stuff left behind
+kind of an experimental game that takes some getting used to
+requires some wrapping your head around
+
+the idea behind chest gremlin was never "npc vendor"
+you still need gear to fight off creatures like yourself, like big rats
+who are sniffing when the hero has cleared a dungeon and left items behind
+
+this can be easily auto-gamed
+
+::
+
+modern players who are used to ai, dreaming up anything
+the modern player will want to have a self-playing game
+not something that requires player agency
+but a game that requires you to set larger goals
+or just pick skills that help you survive better
+
+my experience from clickpocalypse 2 is that it's, well...
+it's tedious, and nothing you click seems to really matter,
+heroes in your party can't even seem to die
+but it's a very enjoyable and thorough game with lots of stuff happening
+so it tickles rpg adhd and hits a tough osr snare
+but it's tedious and every click lacks meaning
+
+but i want to believe that the auto battler, idler and clicker genre
+are a cool modern alternative to games that want you to play it
+play it for me bitch, i'm not an octopus
+
+and with that said, chest grem can be auto-gamed
+first, the player quote unquote checks every room and hallway
+and cowers to the nearest hidey hole possible, hopes to not get discovered by heroes
+the grem inspects items and stashes it when they're trinkets
+and drags them into sewer holes when they're bigger, waiting for them to wash out
+at the outlet in a worse condition in a slickened quality
+he can also drag items back to the entrance of the dungeon
+to his pet pack animal camel and then return back into the dungeon
+but this is a test of INT and a risk trade off, since backtracking
+introduces risks of meeting other heroes, creatures, and traps
+
+you can tag on more systems unto this
+
+https://pwmarcz.pl/blog/making-roguelikes/
+https://arstechnica.com/gaming/2020/03/ascii-art-permadeath-the-history-of-roguelike-games/
