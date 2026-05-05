@@ -35,10 +35,8 @@ you are in stone lands, a somewhat chaotic realm struck by disorder. heroes roam
 
 
 
--- start of rants ---
-
+--- --- ---
 here is a train of thought that makes chest gremlin what it is:
-
 to work it out:
 gnome walks thru the dungeon, even tho heroes are meant to for xp and loot
 if he's an npc vendor, what's he doing? he can loot gear left behind
@@ -49,15 +47,13 @@ he could watch from behind a crate or a sewer outlet
 when he comes out he grabs stuff left behind
 kind of an experimental game that takes some getting used to
 requires some wrapping your head around
-
 the idea behind chest gremlin was never "npc vendor"
 you still need gear to fight off creatures like yourself, like big rats
 who are sniffing when the hero has cleared a dungeon and left items behind
+this can be easily auto-gamed --->
+--- --- ---
 
-this can be easily auto-gamed
-
-::
-
+::: ::: :::
 modern players who are used to ai, dreaming up anything
 the modern player will want to have a self-playing game
 not something that requires player agency
@@ -73,8 +69,10 @@ but it's tedious and every click lacks meaning
 
 but i want to believe that the auto battler, idler and clicker genre
 are a cool modern alternative to games that want you to play it
-play it for me bitch, i'm not an octopus
+play it for me bitch, i'm not an octopus...! --->
+::: ::: :::
 
+=== === ===
 and with that said, chest grem can be auto-gamed
 first, the player quote unquote checks every room and hallway
 and cowers to the nearest hidey hole possible, hopes to not get discovered by heroes
@@ -85,8 +83,24 @@ he can also drag items back to the entrance of the dungeon
 to his pet pack animal camel and then return back into the dungeon
 but this is a test of INT and a risk trade off, since backtracking
 introduces risks of meeting other heroes, creatures, and traps
-
 you can tag on more systems unto this
+path of ahcra is an example of a roguelike that mixes auto genres --->
+=== === ===
 
+~~~ ~~~ ~~~
+a reason why this interpretation of chest grem doesn't work
+is that it's a game of cat and mouse
+~~~ ~~~ ~~~
+
+### ### ###
+
+### ### ###
+
+---
+---
+
+
+https://store.steampowered.com/app/4382860/Loot_Goblin/
 https://pwmarcz.pl/blog/making-roguelikes/
 https://arstechnica.com/gaming/2020/03/ascii-art-permadeath-the-history-of-roguelike-games/
+https://knightattheopera.blogspot.com/2024/01/capsule-games-part-1-introduction.html
